@@ -17,47 +17,7 @@
     <div class="container">
         <br>
         <h6 class="text-center">Welcome to phoneshop online : chose the phone you like!</h6>
-        <form action="?route=search" method="POST">
-            <br>
-            <input class="form-control text-sm" name="search_keyword" type="text" placeholder="Search you interested in ?">
-            <div class="d-sm-flex justify-content-between text-sm m-1">
-                <p><b>Note :</b> เลือกสินค้าที่คุณต้องการ</p>
-                <input class="btn btn-sm btn-primary" value="Search" name="search_submit" type="submit">
-            </div>
-        </form>
         <br>
-        <div class="row detail-form">
-        <?php
-            if(!empty($result)){
-        ?>      
-                <div class="d-sm-flex mt-3">
-                    <div class="detail-product col-5 mt-5">
-                        <h2><?=$result['product_name']?></h2>
-                        <hr>
-                        <br>
-                        <h6>ราคา : <?=$result['product_price']?> บาท</h6>
-                        <br>
-                        <h6>ขนาด : <?=$result['product_size']?></h6>
-                        <br>
-                        <h6>กล้องหน้า : <?=$result['product_cam']?></h6>
-                        <br>
-                        <h6>CPU : <?=$result['product_cpu']?></h6>
-                        <br>
-                        <h6>OS service : <?=$result['product_sevice']?></h6>
-                        <br>
-                        <h6>Memory : <?=$result['product_memo']?></h6>
-                        <br>
-                        <h6>Battery : <?=$result['product_battery']?></h6>
-                        <br>
-                    </div>
-                    <div class="img-product col-7">
-                        <img src="<?=$result['product_img']?>" alt="" width="100%">
-                    </div>
-                </div>
-        <?php
-            }
-        ?>
-        </div>
         <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted mt-5">
   <!-- Section: Social media -->
@@ -111,47 +71,6 @@
         </div>
         <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
 
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
